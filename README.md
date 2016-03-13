@@ -1,6 +1,6 @@
 # Frontend Nanodegree Arcade Game
 This is an arcade game created primarily using HTML5 canvas as part of the Udacity Frontend Nanodegree.
-Visit the [live version](royshouvik.github.io/frontend-nanodegree-arcade-game) to play the game.
+Visit the [live version](http://royshouvik.github.io/frontend-nanodegree-arcade-game/) to play the game.
 
 ## How to play
 The objective of the game is to reach the water while avoiding bugs and collecting as many gems as possible.
