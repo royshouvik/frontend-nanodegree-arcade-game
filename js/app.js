@@ -38,7 +38,7 @@ Enemy.prototype.update = function(dt) {
     // Change the y coordinate and speed value if enemey is out of screen
     if(this.x > (canvasWidth)) {
         this.y = (Math.floor((Math.random() * 8)) * tileHeight) + tileHeight + (tileHeight / 2);
-        this.speed = Math.random();
+        this.speed = Math.max(Math.random(), 0.5);
     }
 };
 
