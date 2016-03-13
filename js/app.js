@@ -19,7 +19,9 @@ var Enemy = function() {
     this.x = -10;
     this.y =  (Math.floor((Math.random() * 8)) * tileHeight) + tileHeight + (tileHeight / 2) ;
     this.step = 450;
-    this.speed = Math.random();
+
+    // Set speed between 0.5 and 1
+    this.speed = Math.max(Math.random(), 0.5);
     this.width = 100;
     this.height = 40;
 
@@ -166,7 +168,7 @@ for (var i = 0; i < 9; i++) {
 var numberOfCollectibles = Math.max(Math.floor(Math.random() * 10), 5);
 var allCollectibles = [];
 for (var i = 0; i < numberOfCollectibles; i++) {
-    
+
     // Generate collectible type randomly
     var collectibleType = Math.floor((Math.random() * 3));
     allCollectibles.push(new Collectible(collectibleType));

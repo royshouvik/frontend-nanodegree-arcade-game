@@ -290,7 +290,7 @@ var Engine = (function(global) {
 
 // function to reset collectibles
   function resetCollectibles() {
-    numberOfCollectibles = Math.floor(Math.random() * 10);
+    numberOfCollectibles = Math.max(Math.floor(Math.random() * 10), 5);
     allCollectibles = [];
     for (var i = 0; i < numberOfCollectibles; i++) {
       var collectibleType = Math.floor((Math.random() * 3));
